@@ -178,6 +178,7 @@ header li > a {
   display: flex;
   position: relative;
   line-height: inherit;
+  transition: var(--trans-color);
 }
 
 /*  01.HEADER*********
@@ -204,7 +205,7 @@ header li > a {
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
   z-index: 1;
-  /* display: none; */
+  display: none;
 }
 .header-top .right ul ul li a {
   padding: 0.25em 1em;
@@ -212,6 +213,23 @@ header li > a {
 .header-top .right ul ul li.current a {
   background-color: var(--border-color);
 }
+.header-top li:hover ul {
+  display: block;
+}
+
+/*  01.HEADER*********
+            a. Header Nav
+    **********/
+.trigger {
+  font-size: 1.5em;
+  display: flex;
+  padding: 0.25px;
+  margin-right: 0.5em;
+}
+
+
+
+
 
 
 
@@ -245,6 +263,9 @@ header li > a {
 @media screen and (min-width: 992px) {
   .container {
     padding: 0 2em;
+  }
+  .desktop-hide{
+    display: none;
   }
 }
 .main-links a:hover {
