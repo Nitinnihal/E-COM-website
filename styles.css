@@ -223,15 +223,17 @@ header li > a {
 .trigger {
   font-size: 1.5em;
   display: flex;
-  padding: 0.25px;
+  padding: 0.25em;
   margin-right: 0.5em;
 }
-
-
-
-
-
-
+.logo a{
+  font-family: "Poppins";
+  font-size: 1.75em;
+  position: relative;
+  font-weight: var(--fw8);
+  display: flex;
+  padding-left: 0.75em;
+}
 
 
 
@@ -264,7 +266,7 @@ header li > a {
   .container {
     padding: 0 2em;
   }
-  .desktop-hide{
+  .desktop-hide {
     display: none;
   }
 }
