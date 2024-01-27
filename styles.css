@@ -378,6 +378,11 @@ nav .fly-item {
   gap: 1em;
   transition: var(--trans-color);
 }
+.mini-text {
+  font-size: var(--font-smaller);
+  color: var(--light-text-color);
+}
+
 /*      HEADER ***********************
  *  c.Header Main, Departments Category
  ***********************/
@@ -410,6 +415,34 @@ nav .fly-item {
   padding: 1.3em;
   height: 60px;
   width: 60px;
+}
+/* HEADER ***********************
+ *  d.Search Form
+ ***********************/
+
+.header-main .right {
+  flex: 1;
+}
+form {
+  position: relative;
+}
+form.search input {
+  line-height: 3.25em;
+  padding: 0 7em 0 4.5em;
+  border: 0;
+  outline: 0;
+  width: var(--percent100);
+  border-radius: 7px;
+  font-size: 0.9em;
+  font-weight: var(--fw3);
+}
+form .search:where(span, button) {
+  position: absolute;
+  top: 0;
+  padding: 0.55em 1.5em;
+  font-size: 1em;
+  color: var(--light-text-color);
+  height: var(--percent100);
 }
 
 /***************
