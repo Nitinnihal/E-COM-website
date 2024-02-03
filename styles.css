@@ -319,7 +319,7 @@ nav .fly-item {
 }
 .icon-small {
   font-size: 1.25em;
-  margin: auto;
+  margin-left: auto;
 }
 .icon-large {
   font-size: 1.75em;
@@ -416,6 +416,11 @@ nav .fly-item {
   height: 60px;
   width: 60px;
 }
+.dpt-menu > ul > li > a {
+  font-size: var(--font-small);
+  height: 46px;
+  align-items: center;
+}
 /* HEADER ***********************
  *  d.Search Form
  ***********************/
@@ -436,7 +441,7 @@ form.search input {
   font-size: 0.9em;
   font-weight: var(--fw3);
 }
-form .search:where(span, button) {
+form.search :where(span, button) {
   position: absolute;
   top: 0;
   padding: 0.55em 1.5em;
@@ -444,7 +449,21 @@ form .search:where(span, button) {
   color: var(--light-text-color);
   height: var(--percent100);
 }
-
+form.search button {
+  right: 0;
+  border: 0;
+  outline: 0;
+  font-size: 0.875em;
+  font-weight: var(--fw6);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
+  transition: var(--trans-background);
+}
+form.search button:hover {
+  background-color: var(--dark-color);
+}
 /***************
 * 15.RESPONSIVE
 *************/
@@ -538,5 +557,24 @@ form .search:where(span, button) {
     font-weight: var(--fw8);
     align-items: center;
     color: var(--secondary-dark-color);
+  }
+  .header-main .right {
+    max-width: 600px;
+    margin-left: auto;
+  }
+  /* Department menu */
+  .dpt-menu {
+    position: absolute;
+    top: var(--percent100);
+    width: 300px;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .dpt-menu > ul > li > a {
+    font-weight: var(--fw5);
+    padding: 0 1.5em;
+    border-bottom: 1px solid var(--border-color);
   }
 }
